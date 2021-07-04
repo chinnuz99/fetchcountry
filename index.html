@@ -61,25 +61,7 @@
         result.innerHTML = html_data
 
     }
-    // function fetchcountry(){
-    //     let country_name=country.value
-    //     let url=`https://restcountries.eu/rest/v2/name/${country_name}?fullText=true`
-    //     let request=new XMLHttpRequest()
-    //     request.open("get",url)
-    //     request.send()
-    //     request.onreadystatechange=()=>{
-    //         if(request.readyState==4){
-    //             if(request.status>199 & request.status<300){
-    //                 let data=JSON.parse(request.responseText)
-    //                 console.log(data);
-    //                 displayValues(data)
-    //             }
-    //             else{
-    //                 console.log("failed")
-    //             }
-    //         }
-    //     }
-    // }
+   
     function fetchcountry() {
         let country_name = country.value;
         let url = `https://restcountries.eu/rest/v2/name/${country_name}?fullText=true`
@@ -99,5 +81,3 @@
 
 </html>
 
-<!-- etch by default use"get" method=>then=promise, if success=>response changed to json
-which is then called data => displayed in html page -->
